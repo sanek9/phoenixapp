@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Liberation Serif';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-Italic.woff') format('woff');
+}
+@font-face {
+    font-family: 'Liberation Serif';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Liberation Serif';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-BoldItalic.woff') format('woff');
+}
+.wrap-wrapper b {
+  font-weight: 700;
+}
+.wrap-wrapper {
+  width: 302px;
+  height: 214px;
+}
+.wrapper {
+  transform: scale(0.5) translate(-158px, -225px);
+}
+.box-wrapper {
+  width: 604px;
+  height: 427px;
+  background-color: white;
+  border: red;
+  border-style: dashed;
+  /* border: 16px solid transparent; */
+  /* border-image: 16 repeating-linear-gradient(-35deg, red 0, red 10px, transparent 0, transparent 25px,
+               red 0, red 40px, transparent 0, transparent 40px); */
+  /* border-image: 16 repeating-linear-gradient(45deg, red 0, red 1em, transparent 0, transparent 2em,
+	              #b67 0, #b67 3em, transparent 0, transparent 4em); */
+  border-width: 10px;
+  position: relative;
+}
+.box {
+  background-color: white;
+  width: 584px;
+  height: 407px;
+  margin: auto;
+}
+.header {
+  margin: 14px auto;
+  font-family: 'Liberation Serif', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 34px;
+  color: red;
+  position: relative;
+}
+.photo {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  width: 171px;
+  height: 228px;
+}
+.water-logo {
+  position: absolute;
+  left: 220px;
+  top: 30px;
+  right: 10px;
+  bottom: 20px;
+  margin: auto;
+  width: 300px
+}
+.contacts {
+  position: absolute;
+  height: 70px;
+  left: 0px;
+  bottom: 0px;
+  padding: 15px;
+  right: 0px;
+  color: rgb(179, 69, 69);
+  font-family: 'Liberation Serif', sans-serif;
+  font-size: 16px;
+}
+
+.qr-logo-wrapper {
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  height: 70px;
+}
+.qr-logo-wrapper img {
+  width: 70px;
+  display: block;
+  margin: auto;
+}
+.qr-logo-wrapper .link {
+  font-family: 'Liberation Serif', sans-serif;
+  font-size: 12px;
+  font-stretch: ultra-condensed;
+}
+.content {
+  position: absolute;
+  left: 220px;
+  top: 60px;
+  right: 20px;
+}
+.name {
+  margin: 12px auto;
+  text-align: center;
+  font-family: 'Liberation Serif', sans-serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 18px;
+
+}
+.name .birth {
+  text-transform: lowercase;
+}
+.mline {
+  font-family: 'Liberation Serif', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 8px 0;
+}
+.mline span {
+  color: rgb(179, 69, 69);
+}
+.text {
+  font-family: 'Liberation Serif', sans-serif;
+}

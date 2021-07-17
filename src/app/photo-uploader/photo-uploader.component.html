@@ -1,0 +1,20 @@
+<mat-card style="max-width: 700px">
+    <mat-card-content>
+      <image-cropper #cropper
+          [imageChangedEvent]="imageChangedEvent"
+          [maintainAspectRatio]="true"
+          [aspectRatio]="0.75"
+          format="png"
+          [autoCrop]="false"
+          (imageCropped)="imageCropped.emit($event)"
+          (imageLoaded)="imageLoaded()"
+          (cropperReady)="cropperReady()"
+          (loadImageFailed)="loadImageFailed()"
+      ></image-cropper>
+      <!-- <mat-spinner style="margin: 0 auto;" *ngIf="loading"></mat-spinner> -->
+      <mat-progress-bar style="margin: 0 auto;" *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+    </mat-card-content>
+<mat-card-actions>
+  <button mat-button (click)="loading=true; cropper.crop(); onBack.emit();">Готово</button>
+</mat-card-actions>
+</mat-card>

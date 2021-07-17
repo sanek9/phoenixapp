@@ -1,0 +1,40 @@
+<mat-card>
+    <mat-card-content>
+      <div class="wrap-wrapper">
+        <div class="wrapper">
+          <div #eldiv class="box-wrapper">
+            <div class="box">
+              <div class="header">Внимание! Пропал человек!</div>
+              <img class="photo" [src]="imageSrc" alt="">
+              <img class="water-logo" [src]="waterLogoSrc" alt="">
+              <div class="contacts">
+                Всем, кому что-либо известно о местонахождении пропавш{{(gender=='M'?"его":"ей")}},<br>
+                просьба сообщить по телефонам ПСО "Феникс" <b>+375292221019;</b>
+                <br><b>102.</b>
+              </div>
+              <div class="qr-logo-wrapper">
+                <img [src]="'assets/qr-code.png'">
+                <div class="link">
+                  https://vk.com/phoenix_mogilev
+                </div>
+              </div>
+              <div class="content">
+                 <div class="name"><span>{{name}}</span><span *ngIf="birth" class="birth">, {{birth}} г.р.</span></div>
+                 <div class="text"  *ngIf="text">{{text}}</div>
+                 <div class="mline" *ngIf="address"><span>Адрес: </span>{{address}}</div>
+                 <div class="mline" *ngIf="clothes"><span>Одежда: </span>{{clothes}}</div>
+                 <div class="mline" *ngIf="signs"><span>Приметы: </span>{{signs}}</div>
+                 <div class="mline" *ngIf="specialSigns"><span>Особые приметы: </span>{{specialSigns}}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <mat-progress-bar style="margin: 0 auto;" *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+  </mat-card-content>
+<mat-card-actions>
+  <button mat-button (click)="onBack.emit();">Назад</button>
+  <button mat-button (click)="generate(save)">Скачать</button>
+  <a [href]="dataURL" style="display: none;" #save download="image.png">Скачать</a>
+</mat-card-actions>
+</mat-card>
