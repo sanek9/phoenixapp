@@ -88,10 +88,10 @@
 }
 .contacts {
   position: absolute;
-  height: 70px;
+  height: 50px;
   left: 0px;
-  bottom: 0px;
-  padding: 15px;
+  bottom: 20px;
+  padding: 0 15px;
   right: 0px;
   color: rgb(179, 69, 69);
   font-family: 'Liberation Serif', sans-serif;
@@ -101,7 +101,7 @@
 .qr-logo-wrapper {
   position: absolute;
   right: 10px;
-  bottom: 30px;
+  bottom: 20px;
   height: 70px;
 }
 .qr-logo-wrapper img {
@@ -115,28 +115,30 @@
   font-stretch: ultra-condensed;
 }
 .content {
+  font-family: 'Liberation Serif', sans-serif;
   position: absolute;
-  left: 220px;
-  top: 70px;
-  right: 20px;
+  left: 210px;
+  right: 10px;
+  font-size: 14px;
+  line-height: 110%;
 }
 .name {
-  margin: 12px auto;
+  margin: 8px 6px auto auto;
   text-align: center;
   font-family: 'Liberation Serif', sans-serif;
   font-weight: bold;
   text-transform: capitalize;
   font-size: 18px;
+  line-height: 115%;
 
 }
 .name .birth {
   text-transform: lowercase;
 }
 .mline {
-  font-family: 'Liberation Serif', sans-serif;
   font-weight: bold;
   font-size: 15px;
-  margin: 8px 0;
+  margin: 6px 0;
 }
 .mline span {
   color: rgb(179, 69, 69);
