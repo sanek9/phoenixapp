@@ -1,29 +1,26 @@
 @font-face {
     font-family: 'Liberation Serif';
-    font-style: normal;
+    src: local('Liberation Serif'), local('LiberationSerif'), url('fonts/liberationserif.woff2') format('woff2'), url('fonts/liberationserif.woff') format('woff'), url('fonts/liberationserif.ttf') format('truetype');
     font-weight: 400;
-    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-Regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'Liberation Serif';
-    font-style: italic;
-    font-weight: 400;
-    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-Italic.woff') format('woff');
-}
-@font-face {
-    font-family: 'Liberation Serif';
     font-style: normal;
-    font-weight: 700;
-    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-Bold.woff') format('woff');
 }
 @font-face {
     font-family: 'Liberation Serif';
+    src: local('Liberation Serif Italic'), local('LiberationSerif-Italic'), url('fonts/liberationserifitalic.woff2') format('woff2'), url('fonts/liberationserifitalic.woff') format('woff'), url('fonts/liberationserifitalic.ttf') format('truetype');
+    font-weight: 400;
     font-style: italic;
-    font-weight: 700;
-    src: local('Liberation Serif'), url('https://fonts.cdnfonts.com/s/278/LiberationSerif-BoldItalic.woff') format('woff');
 }
-.wrap-wrapper b {
-  font-weight: 700;
+@font-face {
+    font-family: 'Liberation Serif';
+    src: local('Liberation Serif Bold'), local('LiberationSerif-Bold'), url('fonts/liberationserifbold.woff2') format('woff2'), url('fonts/liberationserifbold.woff') format('woff'), url('fonts/liberationserifbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Liberation Serif';
+    src: local('Liberation Serif Bold Italic'), local('LiberationSerif-BoldItalic'), url('fonts/liberationserifbolditalic.woff2') format('woff2'), url('fonts/liberationserifbolditalic.woff') format('woff'), url('fonts/liberationserifbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
 }
 .wrap-wrapper {
   width: 322px;
@@ -136,12 +133,13 @@
   text-transform: lowercase;
 }
 .mline {
-  font-weight: bold;
+  font-weight: normal;
   font-size: 15px;
   margin: 6px 0;
 }
 .mline span {
   color: rgb(179, 69, 69);
+  font-weight: bold;
 }
 .text {
   font-family: 'Liberation Serif', sans-serif;
